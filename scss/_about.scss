@@ -1,0 +1,42 @@
+.about-content {
+  margin-top: 125px;
+  background-color: rgba(123, 31, 162, 0.2);
+  border-radius: 13px;
+  .img-wrapper {
+    position: relative;
+  }
+  h2 {
+    font-size: $fontSizeXL;
+    position: absolute;
+    transform: rotate(10deg);
+    left: 310px;
+    top: 60px;
+    font-family: "Dancing Script", cursive;
+    color: #48414b;
+  }
+
+  .text-wrapper {
+    @include dFlex(space-between, center, 0, 0);
+    padding-right: 40px;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  .about-text {
+    width: 370px;
+    height: 348px;
+    background-color: #48414b;
+    border-radius: 78% 22% 65% 35% / 53% 47% 53% 47%;
+    @include dFlex(center, center, 100px, 100px);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  p {
+    text-align: center;
+    color: #e0e0e0;
+    padding: 20px;
+    font-size: 16px;
+  }
+}

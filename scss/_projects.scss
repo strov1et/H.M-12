@@ -1,0 +1,16 @@
+.projects-wrapper{
+  max-width: 346px;
+  height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  h2 {
+    font-size: $fontSizeL;
+    color: $primaryColor;
+    margin: 0 auto;
+  }
+  p{
+    font-size: $fontSizeNormal;
+    color: $secondaryColor;
+  }
+}

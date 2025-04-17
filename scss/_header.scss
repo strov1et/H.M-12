@@ -1,0 +1,52 @@
+header {
+  .content {
+    @include dFlex(space-between, center, 0);
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+  ul,
+  .header-content {
+    @include dFlex(flex-start, center, 54px, 0);
+  }
+  ul {
+    gap: 20px;
+  }
+  li {
+    color: $primaryColor;
+  }
+  nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(to right, #8f00ff, #da70d6);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: #8f00ff;
+    }
+  }
+
+  .social-icons ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+  .menu {
+    display: none;
+  }
+}

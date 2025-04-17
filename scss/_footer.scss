@@ -1,9 +1,7 @@
 footer {
-  margin-top: 225px;
+  margin-top: 125px;
   .top-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include dFlex(space-between, center, 0, 0);
   }
 
   img {
@@ -28,6 +26,11 @@ footer {
     }
   }
 }
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
 
 .contact {
   display: flex;
@@ -40,7 +43,6 @@ a {
 .social-icons ul {
   display: flex;
   gap: 10px;
-
 }
 
 .line {
@@ -50,16 +52,20 @@ a {
   margin: 52px auto;
 }
 .bottom-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 20px;
-  .passive{
+  @include dFlex(center, center, 0, 0);
+  .passive {
     display: none;
   }
   ul {
     display: flex;
     gap: 20px;
   }
+  li {
+    transition: all 0.3s ease;
 
+    &:hover {
+      font-weight: 700;
+    }
+  }
 }

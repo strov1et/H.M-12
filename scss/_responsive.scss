@@ -60,10 +60,22 @@
     width: 20px;
     height: 20px;
   }
-  .bottom-container .disable{
+  .bottom-container .disable {
     display: none;
   }
-  
+  // about
+
+  .about-content h2 {
+    top: 43px;
+    font-size: 50px;
+    left: 40px;
+  }
+  .text-wrapper {
+    @include dFlex(flex-start, center, 0, 20px);
+  }
+  img {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -75,5 +87,10 @@
       width: 100%;
       margin-left: 20px;
     }
+  }
+  // about
+  .about-content img {
+    width: 300px;
+    height: 300px;
   }
 }

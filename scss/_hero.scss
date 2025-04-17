@@ -1,0 +1,82 @@
+.hero {
+  @include dFlex(space-between, flex-start, 0, 0);
+  margin-top: 39px;
+  padding: 46px 0;
+  h1 {
+    font-size: $fontSizeXL;
+    text-align: left;
+    width: 35%;
+    color: $primaryColor;
+  }
+  h2 {
+    display: none;
+    font-size: $fontSizeL;
+    text-align: left;
+    width: 300px;
+    color: $primaryColor;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slide 1s ease-out forwards;
+  }
+  button {
+    display: none;
+    background: linear-gradient(135deg, #8f00ff, #da70d6);
+    color: #fff;
+    font-size: $fontSizeS;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(143, 0, 255, 0.3);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(143, 0, 255, 0.5);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.hero img {
+  width: 380px;
+  min-height: 380px;
+  border-radius: 8px;
+  border: 4px solid;
+  border-image: linear-gradient(to right, #8f00ff, #da70d6) 1;
+}
+.tech-stack {
+  margin-top: 340px;
+  flex-direction: column;
+  @include dFlex(flex-start, center, 0, 49px);
+  h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: $primaryColor;
+  }
+  p {
+    font-size: $fontSizeNormal;
+    font-weight: 400;
+    color: $secondaryColor;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    max-width: 399px;
+    @include dFlex(space-between, flex-start, 0, 10px);
+  }
+  .icons img {
+    width: 100px;
+    min-height: 90px;
+  }
+}

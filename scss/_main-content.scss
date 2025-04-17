@@ -1,0 +1,25 @@
+.tech-stack {
+  margin-top: 40px;
+  flex-direction: column;
+  @include dFlex(flex-start, center, 0, 49px);
+  h2 {
+    font-size: $fontSizeL;
+    font-weight: 700;
+    color: $primaryColor;
+  }
+  p {
+    font-size: 32px;
+    font-weight: 400;
+    color: $secondaryColor;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    max-width: 399px;
+    @include dFlex(space-between, flex-start, 0, 10px);
+  }
+  .icons img {
+    width: 100px;
+    min-height: 90px;
+  }
+}
