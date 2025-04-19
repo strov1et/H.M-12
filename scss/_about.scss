@@ -13,6 +13,7 @@
     top: 60px;
     font-family: "Dancing Script", cursive;
     color: #48414b;
+    
   }
 
   .text-wrapper {
@@ -25,7 +26,7 @@
     height: 400px;
   }
   .about-text {
-    width: 370px;
+    max-width: 370px;
     height: 348px;
     background-color: #48414b;
     border-radius: 78% 22% 65% 35% / 53% 47% 53% 47%;

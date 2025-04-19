@@ -49,7 +49,7 @@
     }
   }
   .cards-wrapper {
-   @include dFlex (center,center,0,0);
+    @include dFlex(center, center, 0, 0);
   }
 
   footer {
@@ -70,16 +70,25 @@
   // about
 
   .about-content h2 {
-    top: 43px;
-    font-size: 50px;
-    left: 40px;
+   
+    position: static;
+    transform: none;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 40px;
+    transform: rotate(18deg);
+    
   }
   .text-wrapper {
-    @include dFlex(flex-start, center, 0, 20px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .vector-illustration{
-    padding-top: 60px;
-  }
+}
+.vector-illustration {
+  padding-top: 60px;
 }
 
 @media (max-width: 500px) {
@@ -93,8 +102,13 @@
     }
   }
   // about
-  .about-content img {
-    width: 300px;
-    height: 300px;
+  .about-content {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    p{
+      font-size: 15px;
+    }
   }
 }
