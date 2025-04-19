@@ -1,4 +1,4 @@
-.projects-wrapper{
+.info-section{
   max-width: 346px;
   height: 26px;
   margin: 0 auto;
@@ -14,3 +14,63 @@
     color: $secondaryColor;
   }
 }
+.cards-wrapper{
+  padding-top: 96px;
+  @include dFlex(space-between,center,0,0);
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.card{
+  max-width: 375px;
+  min-height: 567px;
+  
+}
+.project-1{
+  background-image: url(../images/project1.png);
+  
+}
+.project-2{
+  background-image: url(../images/project2.png);
+}
+.project-3{
+  background-image: url(../images/project-3.png);
+  
+}
+.card-top{
+  
+  // background-position: center;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 260px;
+}
+
+.card-bottom{
+  padding: 28px;
+  h4{
+    font-size: $fontSizeNormal;
+    color: #000;
+    font-weight: 500;
+  }
+  p{
+    font-size: $fontSizeS;
+    color: $secondaryColor;
+  }
+  .skills{
+    color: $primaryColor;
+    font-weight: 400;
+  }
+  span{
+    font-weight: 300;
+  }
+  .links{
+    @include dFlex(flex-start,center,48px,0);
+    padding-top: 25px;
+  }
+  button {
+    background-color: transparent;
+    @include dFlex(flex-start,center,5px,0);
+    text-decoration: underline;
+
+  }
+}
+

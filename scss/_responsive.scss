@@ -48,6 +48,10 @@
       text-align: center;
     }
   }
+  .cards-wrapper {
+   @include dFlex (center,center,0,0);
+  }
+
   footer {
     .contact {
       display: none;
@@ -73,7 +77,7 @@
   .text-wrapper {
     @include dFlex(flex-start, center, 0, 20px);
   }
-  img {
+  .vector-illustration{
     padding-top: 60px;
   }
 }
